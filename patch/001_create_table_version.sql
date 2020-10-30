@@ -1,0 +1,7 @@
+CREATE TABLE `Version` (
+  `id` SMALLINT NOT NULL AUTO_INCREMENT,
+  `number` INT NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = MyISAM;
+
+INSERT INTO `Version` VALUES (1, '1');

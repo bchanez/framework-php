@@ -1,0 +1,52 @@
+default:
+  autoload:
+    '': 'test/acceptance'
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+  suites:
+    default:
+      contexts:
+        - tc95Context
+        - tc71Context
+        - tc63Context
+        - tc54Context
+        - tc52Context
+        - tc51Context
+        - tc362Context
+        - tc342Context
+        - tc340Context
+        - tc339Context
+        - tc32Context
+        - tc30Context
+        - tc289Context
+        - tc288Context
+        - tc287Context
+        - tc280Context
+        - tc279Context
+        - tc277Context
+        - tc275Context
+        - tc274Context
+        - tc268Context
+        - tc267Context
+        - tc266Context
+        - tc262Context
+        - tc23Context
+        - tc165Context
+        - tc160Context
+        - tc159Context
+        - tc158Context
+        - tc154Context
+        - tc137Context
+        - tc133Context
+        - tc130Context
+        - tc114Context
+        - tc110Context
+        - tc108Context
+        - tc107Context
+        - tc106Context
+        - tc104Context
+        - defaultContext
+      paths:
+        features: test/resources
+        bootstrap: test/acceptance

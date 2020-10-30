@@ -1,0 +1,28 @@
+{
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "^9.3.9",
+    "phpunit/php-code-coverage": "^9.2",
+    "behat/behat": "^3.7",
+    "behat/mink": "^1.8",
+    "behat/mink-goutte-driver": "^1.2",
+    "behat/mink-extension": "^2.3"
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.2"
+  },
+  "scripts": {
+    "format": [
+      "watch php-cs-fixer fix"
+    ],
+    "test": "phpunit test",
+    "coverage": "phpunit --coverage-text",
+    "coverage-html": "phpunit --coverage-html test/coverage/",
+    "behat": "behat --colors",
+    "update-bdd": "sh update_bdd.sh",
+    "update-gherkin": "sh update_gherkin.sh"
+  },
+  "config": {
+    "process-timeout": 0
+  }
+}
